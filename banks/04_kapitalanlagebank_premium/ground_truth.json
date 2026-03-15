@@ -1,0 +1,86 @@
+{
+  "bank_id": "04_kapitalanlagebank_premium",
+  "bank_name": "Kapitalanlagebank Premium AG",
+  "bank_type": "Private Banking / Wealth Management",
+  "regulatory_scope": [
+    "GwG",
+    "KWG",
+    "KAGB",
+    "WpHG"
+  ],
+  "compliance_maturity": "niedrig-mittel",
+  "description": "Private-Banking-Haus mit internationaler Kundschaft, hohem PEP-Anteil und komplexen wirtschaftlich Berechtigten-Ketten über Offshore-Strukturen. Hochrisiko-Testfall.",
+  "gesamturteil": "erhebliche_maengel",
+  "prueffelder": [
+    {
+      "id": "S02-02",
+      "titel": "Verstärkte Sorgfaltspflichten PEP",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "23 PEP-Kunden ohne Senior-Management-Genehmigung bei Geschäftseröffnung",
+        "Jährliches PEP-Review bei 8 Kunden überfällig (>18 Monate)"
+      ],
+      "rechtsgrundlagen": [
+        "§ 15 GwG",
+        "§ 13 GwG"
+      ],
+      "relevante_dokumente": [
+        "pep_register.xlsx",
+        "kyc_premium_handbuch.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "S02-03",
+      "titel": "Wirtschaftlich Berechtigte Offshore-Strukturen",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "14 Kundenbeziehungen mit Offshore-Holding ohne nachgewiesene UBO-Identifikation",
+        "BVI/Cayman-Strukturen: wB-Ketten >3 Ebenen nicht vollständig dokumentiert"
+      ],
+      "rechtsgrundlagen": [
+        "§ 11 GwG",
+        "§ 12 GwG"
+      ],
+      "relevante_dokumente": [
+        "offshore_struktur_analysen.pdf"
+      ],
+      "erwartete_confidence_min": 0.5
+    },
+    {
+      "id": "S01-02",
+      "titel": "Risikoanalyse",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "Risikokategorisierung für Offshore-Kunden nicht ausreichend granular"
+      ],
+      "rechtsgrundlagen": [
+        "§ 5 GwG"
+      ],
+      "relevante_dokumente": [
+        "02_risikoanalyse_2024.pdf"
+      ],
+      "erwartete_confidence_min": 0.45
+    },
+    {
+      "id": "S03-02",
+      "titel": "Hochrisiko-Monitoring",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "Schwellenwerte für PEP-Kunden identisch mit Standardkunden (keine Anpassung)"
+      ],
+      "rechtsgrundlagen": [
+        "§ 15 GwG",
+        "§ 25h KWG"
+      ],
+      "relevante_dokumente": [
+        "04_tm_konzept.pdf"
+      ],
+      "erwartete_confidence_min": 0.45
+    }
+  ]
+}
