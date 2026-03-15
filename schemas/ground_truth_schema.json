@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GroundTruth",
+  "description": "Erwartete Prüfergebnisse je Prüffeld für eine synthetische Bank",
+  "type": "object",
+  "required": [
+    "bank_id",
+    "bank_name",
+    "regulatory_scope",
+    "prueffelder"
+  ],
+  "properties": {
+    "bank_id": {
+      "type": "string",
+      "example": "01_musterbank_ag"
+    },
+    "bank_name": {
+      "type": "string"
+    },
+    "regulatory_scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "compliance_maturity": {
+      "type": "string",
+      "enum": [
+        "hoch",
+        "mittel",
+        "niedrig",
+        "niedrig-mittel"
+      ]
+    },
+    "prueffelder": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "titel",
+          "ergebnis",
+          "rechtsgrundlagen"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "S01-01"
+          },
+          "titel": {
+            "type": "string"
+          },
+          "ergebnis": {
+            "type": "string",
+            "enum": [
+              "konform",
+              "teilkonform",
+              "nicht_konform",
+              "nicht_prüfbar"
+            ]
+          },
+          "schweregrad": {
+            "type": "string",
+            "enum": [
+              "wesentlich",
+              "bedeutsam",
+              "gering",
+              "n/a"
+            ]
+          },
+          "maengel": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "rechtsgrundlagen": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "relevante_dokumente": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "erwartete_confidence_min": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      }
+    }
+  }
+}
