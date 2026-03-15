@@ -1,0 +1,115 @@
+{
+  "bank_id": "02_sparkasse_nordhafen",
+  "bank_name": "Sparkasse Nordhafen",
+  "bank_type": "Kleine Regionalbank",
+  "regulatory_scope": [
+    "GwG",
+    "KWG",
+    "SpkG"
+  ],
+  "compliance_maturity": "niedrig",
+  "description": "Kleine norddeutsche Sparkasse mit starkem Ressourcenmangel im Compliance-Bereich. Veraltete Systeme, kaum Automatisierung, manuelles TM via Excel. Testfall für ressourcenbeschränkte Institute.",
+  "gesamturteil": "erhebliche_maengel",
+  "prueffelder": [
+    {
+      "id": "S01-01",
+      "titel": "GwB-Bestellung und Qualifikation",
+      "ergebnis": "teilkonform",
+      "schweregrad": "gering",
+      "maengel": [
+        "GwB nebenberuflich (50% Stelle), Kapazität fraglich",
+        "Kein formaler Stellvertreter benannt"
+      ],
+      "rechtsgrundlagen": [
+        "§ 7 GwG"
+      ],
+      "relevante_dokumente": [
+        "01_gwb_bestellungsurkunde.pdf"
+      ],
+      "erwartete_confidence_min": 0.5
+    },
+    {
+      "id": "S01-02",
+      "titel": "Risikoanalyse",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "Risikoanalyse aus 2020 - nie aktualisiert",
+        "Keine Risikofelder für digitale Kanäle"
+      ],
+      "rechtsgrundlagen": [
+        "§ 5 GwG"
+      ],
+      "relevante_dokumente": [
+        "02_risikoanalyse_2020.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "S03-01",
+      "titel": "Transaction Monitoring",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "Kein dediziertes TM-System - Monitoring via Excel-Makros",
+        "Keine automatische Schwellenwertüberwachung"
+      ],
+      "rechtsgrundlagen": [
+        "§ 25h KWG"
+      ],
+      "relevante_dokumente": [
+        "tm_excel_tracker.xlsx"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "S02-01",
+      "titel": "KYC Kundensorgfaltspflichten",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "31% der Geschäftskunden ohne aktuelle wB-Dokumentation",
+        "PEP-Screening nur bei Neugeschäft, kein laufendes Monitoring"
+      ],
+      "rechtsgrundlagen": [
+        "§ 10 GwG",
+        "§ 11 GwG"
+      ],
+      "relevante_dokumente": [
+        "03_kyc_dokumentation.pdf"
+      ],
+      "erwartete_confidence_min": 0.45
+    },
+    {
+      "id": "S05-01",
+      "titel": "Schulungen",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "Letzte GwG-Pflichtschulung: 2022",
+        "Keine E-Learning-Plattform, Präsenzschulung nicht dokumentiert"
+      ],
+      "rechtsgrundlagen": [
+        "§ 6 Abs. 2 GwG"
+      ],
+      "relevante_dokumente": [
+        "schulungsnachweis_2022.pdf"
+      ],
+      "erwartete_confidence_min": 0.5
+    },
+    {
+      "id": "S08-01",
+      "titel": "Interne Revision",
+      "ergebnis": "nicht_prüfbar",
+      "schweregrad": "n/a",
+      "maengel": [
+        "Keine IR-Berichte für AML vorhanden - Prüfung durch Verbandsprüfer unklar"
+      ],
+      "rechtsgrundlagen": [
+        "§ 25c KWG"
+      ],
+      "relevante_dokumente": [],
+      "erwartete_confidence_min": 0.2
+    }
+  ]
+}
