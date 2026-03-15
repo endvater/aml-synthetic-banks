@@ -1,0 +1,116 @@
+{
+  "bank_id": "07_compliance_bank_musterhaft",
+  "bank_name": "Compliance-Bank Musterhaft AG",
+  "bank_type": "Mittelgroße Universalbank",
+  "regulatory_scope": [
+    "GwG",
+    "KWG",
+    "MaRisk",
+    "DORA"
+  ],
+  "compliance_maturity": "hoch",
+  "description": "POSITIV-BENCHMARK: Vollständig compliante Bank ohne Mängel. Dient zum Testen von False-Positive-Raten. Alle Prüffelder sollten als KONFORM bewertet werden.",
+  "gesamturteil": "keine_maengel",
+  "prueffelder": [
+    {
+      "id": "S01-01",
+      "titel": "GwB-Bestellung",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 7 GwG"
+      ],
+      "relevante_dokumente": [
+        "01_gwb_bestellungsurkunde.pdf"
+      ],
+      "erwartete_confidence_min": 0.7
+    },
+    {
+      "id": "S01-02",
+      "titel": "Risikoanalyse",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 5 GwG"
+      ],
+      "relevante_dokumente": [
+        "02_risikoanalyse_2025.pdf"
+      ],
+      "erwartete_confidence_min": 0.7
+    },
+    {
+      "id": "S02-01",
+      "titel": "KYC Sorgfaltspflichten",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 10 GwG",
+        "§ 11 GwG"
+      ],
+      "relevante_dokumente": [
+        "03_kyc_handbuch.pdf"
+      ],
+      "erwartete_confidence_min": 0.65
+    },
+    {
+      "id": "S03-01",
+      "titel": "Transaction Monitoring",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 25h KWG"
+      ],
+      "relevante_dokumente": [
+        "04_tm_konzept.pdf",
+        "tm_alerts_2024.xlsx"
+      ],
+      "erwartete_confidence_min": 0.7
+    },
+    {
+      "id": "S04-01",
+      "titel": "SAR-Verfahren",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 43 GwG"
+      ],
+      "relevante_dokumente": [
+        "05_sar_verfahren.pdf"
+      ],
+      "erwartete_confidence_min": 0.65
+    },
+    {
+      "id": "S05-01",
+      "titel": "Schulungen",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 6 Abs. 2 GwG"
+      ],
+      "relevante_dokumente": [
+        "schulungsmatrix_2025.xlsx"
+      ],
+      "erwartete_confidence_min": 0.7
+    },
+    {
+      "id": "S08-01",
+      "titel": "Interne Revision",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 25c KWG"
+      ],
+      "relevante_dokumente": [
+        "ir_bericht_2024.pdf"
+      ],
+      "erwartete_confidence_min": 0.7
+    }
+  ]
+}
