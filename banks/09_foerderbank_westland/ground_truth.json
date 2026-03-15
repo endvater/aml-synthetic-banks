@@ -1,0 +1,88 @@
+{
+  "bank_id": "09_foerderbank_westland",
+  "bank_name": "Förderbank Westland AöR",
+  "bank_type": "Öffentlich-rechtliche Förderbank",
+  "regulatory_scope": [
+    "GwG",
+    "KWG"
+  ],
+  "compliance_maturity": "hoch",
+  "description": "Öffentlich-rechtliche Förderbank mit klarer Governance-Struktur und beschränktem Kundenkreis. Überwiegend konform mit einigen Besonderheiten bei GwG-Ausnahmen für staatliche Auftraggeber.",
+  "gesamturteil": "geringfuegige_maengel",
+  "prueffelder": [
+    {
+      "id": "S01-02",
+      "titel": "Risikoanalyse",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 5 GwG"
+      ],
+      "relevante_dokumente": [
+        "02_risikoanalyse_2025.pdf"
+      ],
+      "erwartete_confidence_min": 0.65
+    },
+    {
+      "id": "S02-07",
+      "titel": "GwG-Ausnahmen öffentliche Auftraggeber",
+      "ergebnis": "teilkonform",
+      "schweregrad": "gering",
+      "maengel": [
+        "Dokumentation der GwG-Freistellungen für Bundesbehörden nicht standardisiert",
+        "§ 3 Abs. 2 GwG-Ausnahmen ohne systematisches Register"
+      ],
+      "rechtsgrundlagen": [
+        "§ 3 Abs. 2 GwG",
+        "§ 10 Abs. 6 GwG"
+      ],
+      "relevante_dokumente": [
+        "ausnahmen_register.pdf"
+      ],
+      "erwartete_confidence_min": 0.5
+    },
+    {
+      "id": "S03-01",
+      "titel": "Transaction Monitoring",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 25h KWG"
+      ],
+      "relevante_dokumente": [
+        "04_tm_konzept.pdf"
+      ],
+      "erwartete_confidence_min": 0.65
+    },
+    {
+      "id": "S05-01",
+      "titel": "Schulungen",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 6 Abs. 2 GwG"
+      ],
+      "relevante_dokumente": [
+        "schulungsmatrix_2025.xlsx"
+      ],
+      "erwartete_confidence_min": 0.7
+    },
+    {
+      "id": "S04-01",
+      "titel": "SAR-Verfahren",
+      "ergebnis": "nicht_prüfbar",
+      "schweregrad": "n/a",
+      "maengel": [
+        "Keine SAR-Meldungen in 5 Jahren - Plausibilität schwer beurteilbar ohne Transaktionsdaten"
+      ],
+      "rechtsgrundlagen": [
+        "§ 43 GwG"
+      ],
+      "relevante_dokumente": [],
+      "erwartete_confidence_min": 0.3
+    }
+  ]
+}
