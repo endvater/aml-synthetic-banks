@@ -1,0 +1,85 @@
+{
+  "bank_id": "05_eurocredit_bank",
+  "bank_name": "EuroCredit Bank S.A.",
+  "bank_type": "Ausländische Tochtergesellschaft (DACH-Niederlassung)",
+  "regulatory_scope": [
+    "GwG",
+    "KWG",
+    "EU 2015/849",
+    "EU 2018/843"
+  ],
+  "compliance_maturity": "mittel",
+  "description": "DACH-Niederlassung einer osteuropäischen Mutterbank. Gruppen-GwB, grenzüberschreitende Transfers, sprachliche Barrieren in der Dokumentation.",
+  "gesamturteil": "maengel",
+  "prueffelder": [
+    {
+      "id": "S01-03",
+      "titel": "Gruppen-GwB und lokale Verantwortlichkeit",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "Gruppen-GwB sitzt in Warschau - lokale Erreichbarkeit fraglich",
+        "Eskalationswege zur Muttergesellschaft nicht formalisiert"
+      ],
+      "rechtsgrundlagen": [
+        "§ 7 GwG",
+        "§ 9 GwG"
+      ],
+      "relevante_dokumente": [
+        "01_gruppe_gwb_struktur.pdf"
+      ],
+      "erwartete_confidence_min": 0.45
+    },
+    {
+      "id": "S02-04",
+      "titel": "Grenzüberschreitende Transfers",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "Travel Rule nicht vollständig implementiert (Betragsgrenze 1.000 EUR)",
+        "Korrespondenzbanken-Screening fehlt für 3 Partnerbanken"
+      ],
+      "rechtsgrundlagen": [
+        "§ 25i KWG",
+        "EU 2023/1113"
+      ],
+      "relevante_dokumente": [
+        "transfer_konzept.pdf",
+        "korrespondenzbank_liste.xlsx"
+      ],
+      "erwartete_confidence_min": 0.5
+    },
+    {
+      "id": "S06-02",
+      "titel": "Dokumentation in deutscher Sprache",
+      "ergebnis": "teilkonform",
+      "schweregrad": "gering",
+      "maengel": [
+        "Kernprozesse nur auf Englisch dokumentiert, keine DE-Übersetzung"
+      ],
+      "rechtsgrundlagen": [
+        "§ 8 GwG"
+      ],
+      "relevante_dokumente": [
+        "process_documentation_en.pdf"
+      ],
+      "erwartete_confidence_min": 0.4
+    },
+    {
+      "id": "S01-02",
+      "titel": "Risikoanalyse",
+      "ergebnis": "teilkonform",
+      "schweregrad": "gering",
+      "maengel": [
+        "Gruppenweite Risikoanalyse, keine länderspezifische DACH-Anpassung"
+      ],
+      "rechtsgrundlagen": [
+        "§ 5 GwG"
+      ],
+      "relevante_dokumente": [
+        "group_risk_assessment_2024.pdf"
+      ],
+      "erwartete_confidence_min": 0.4
+    }
+  ]
+}
