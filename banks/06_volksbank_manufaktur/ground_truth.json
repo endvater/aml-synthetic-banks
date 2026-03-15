@@ -1,0 +1,95 @@
+{
+  "bank_id": "06_volksbank_manufaktur",
+  "bank_name": "Volksbank Manufaktur eG",
+  "bank_type": "Genossenschaftsbank",
+  "regulatory_scope": [
+    "GwG",
+    "KWG",
+    "GenG"
+  ],
+  "compliance_maturity": "mittel",
+  "description": "Mittelständische Genossenschaftsbank mit Fokus auf Handwerk, KMU und Mittelstandsfinanzierung. Wenig TBML-Awareness, Dokumentenakkreditive im Geschäftskundenbereich.",
+  "gesamturteil": "maengel",
+  "prueffelder": [
+    {
+      "id": "S01-02",
+      "titel": "Risikoanalyse",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "TBML-Risiken (Trade Based Money Laundering) nicht in Risikoanalyse erfasst",
+        "Warenfinanzierungsgeschäfte ohne Risikobewertung"
+      ],
+      "rechtsgrundlagen": [
+        "§ 5 GwG"
+      ],
+      "relevante_dokumente": [
+        "02_risikoanalyse_2023.pdf"
+      ],
+      "erwartete_confidence_min": 0.45
+    },
+    {
+      "id": "S02-05",
+      "titel": "Geschäftskunden KYC Mittelstand",
+      "ergebnis": "teilkonform",
+      "schweregrad": "gering",
+      "maengel": [
+        "Branchenrisiko-Einstufung für Handwerksbetriebe ohne systematischen Ansatz"
+      ],
+      "rechtsgrundlagen": [
+        "§ 10 GwG"
+      ],
+      "relevante_dokumente": [
+        "03_kyc_geschaeftskunden.pdf"
+      ],
+      "erwartete_confidence_min": 0.45
+    },
+    {
+      "id": "S03-04",
+      "titel": "TM für Warenfinanzierung / TBML",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "Keine spezifischen TM-Regeln für Akkreditive und Dokumentengeschäfte",
+        "TBML-Typologien nicht im TM-System abgebildet"
+      ],
+      "rechtsgrundlagen": [
+        "§ 25h KWG",
+        "§ 6 GwG"
+      ],
+      "relevante_dokumente": [
+        "04_tm_konzept.pdf",
+        "akkreditiv_transaktionen_2024.xlsx"
+      ],
+      "erwartete_confidence_min": 0.4
+    },
+    {
+      "id": "S05-01",
+      "titel": "Schulungen",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 6 Abs. 2 GwG"
+      ],
+      "relevante_dokumente": [
+        "schulungsmatrix_2024.xlsx"
+      ],
+      "erwartete_confidence_min": 0.6
+    },
+    {
+      "id": "S07-01",
+      "titel": "Jahresbericht GwB",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 7 GwG"
+      ],
+      "relevante_dokumente": [
+        "gwb_jahresbericht_2024.pdf"
+      ],
+      "erwartete_confidence_min": 0.6
+    }
+  ]
+}
