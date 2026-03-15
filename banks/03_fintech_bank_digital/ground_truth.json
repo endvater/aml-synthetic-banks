@@ -1,0 +1,113 @@
+{
+  "bank_id": "03_fintech_bank_digital",
+  "bank_name": "FinTech Bank Digital GmbH",
+  "bank_type": "Neobank / Digitalbank",
+  "regulatory_scope": [
+    "GwG",
+    "KWG",
+    "ZAG",
+    "PSD2"
+  ],
+  "compliance_maturity": "mittel",
+  "description": "Neobank mit API-only-Ansatz und KI-basiertem Transaction Monitoring. Technisch fortgeschritten, aber lückenhafte Compliance-Dokumentation und ungeklärte Verantwortlichkeiten im Outsourcing.",
+  "gesamturteil": "maengel",
+  "prueffelder": [
+    {
+      "id": "S01-01",
+      "titel": "GwB-Bestellung",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 7 GwG"
+      ],
+      "relevante_dokumente": [
+        "01_gwb_bestellung.pdf"
+      ],
+      "erwartete_confidence_min": 0.6
+    },
+    {
+      "id": "S01-02",
+      "titel": "Risikoanalyse",
+      "ergebnis": "teilkonform",
+      "schweregrad": "gering",
+      "maengel": [
+        "Risikoanalyse aktuell, aber BNPL-Produkte nicht separat bewertet"
+      ],
+      "rechtsgrundlagen": [
+        "§ 5 GwG"
+      ],
+      "relevante_dokumente": [
+        "02_risikoanalyse_2024.pdf"
+      ],
+      "erwartete_confidence_min": 0.5
+    },
+    {
+      "id": "S03-01",
+      "titel": "KI-basiertes TM-System",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "KI-Modell-Dokumentation fehlt (XAI-Anforderungen nicht erfüllt)",
+        "Keine Backtesting-Protokolle für TM-Modell"
+      ],
+      "rechtsgrundlagen": [
+        "§ 25h KWG",
+        "§ 6 GwG"
+      ],
+      "relevante_dokumente": [
+        "04_tm_ai_konzept.pdf"
+      ],
+      "erwartete_confidence_min": 0.45
+    },
+    {
+      "id": "S02-01",
+      "titel": "Digitales KYC / eID",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 10 GwG",
+        "§ 12 GwG"
+      ],
+      "relevante_dokumente": [
+        "03_kyc_eid_prozess.pdf"
+      ],
+      "erwartete_confidence_min": 0.6
+    },
+    {
+      "id": "S09-01",
+      "titel": "Outsourcing / Drittdienstleister TM",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "TM-Anbieter (SaaS) ohne GwG-Auslagerungsvertrag nach § 6 Abs. 7 GwG",
+        "Kein Prüfrecht der Bank beim Dienstleister dokumentiert"
+      ],
+      "rechtsgrundlagen": [
+        "§ 6 Abs. 7 GwG",
+        "§ 25b KWG"
+      ],
+      "relevante_dokumente": [
+        "outsourcing_vertrag_tm.pdf"
+      ],
+      "erwartete_confidence_min": 0.5
+    },
+    {
+      "id": "S04-01",
+      "titel": "SAR/STR-Meldungen",
+      "ergebnis": "teilkonform",
+      "schweregrad": "gering",
+      "maengel": [
+        "goAML-Integration nicht vollständig getestet (Testumgebung fehlt)"
+      ],
+      "rechtsgrundlagen": [
+        "§ 43 GwG"
+      ],
+      "relevante_dokumente": [
+        "sar_log_2024.json"
+      ],
+      "erwartete_confidence_min": 0.45
+    }
+  ]
+}
