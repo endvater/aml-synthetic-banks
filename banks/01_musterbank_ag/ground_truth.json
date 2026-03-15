@@ -1,0 +1,194 @@
+{
+  "bank_id": "01_musterbank_ag",
+  "bank_name": "Musterbank AG",
+  "bank_type": "Mittelgroße Universalbank",
+  "regulatory_scope": [
+    "GwG",
+    "KWG",
+    "MaRisk"
+  ],
+  "compliance_maturity": "mittel",
+  "description": "Baseline-Testfall mit gemischten Mängeln über alle Prüffelder. Realistische Darstellung einer mittelgroßen deutschen Universalbank mit Privat- und Firmenkundengeschäft.",
+  "gesamturteil": "erhebliche_maengel",
+  "prueffelder": [
+    {
+      "id": "S01-01",
+      "titel": "Bestellung und Qualifikation des Geldwäschebeauftragten",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 7 GwG"
+      ],
+      "relevante_dokumente": [
+        "01_gwb_bestellungsurkunde.pdf"
+      ],
+      "erwartete_confidence_min": 0.6
+    },
+    {
+      "id": "S01-02",
+      "titel": "Aktualität und Vollständigkeit der Risikoanalyse",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "Risikoanalyse datiert auf Februar 2022 - keine Aktualisierung seit über 3 Jahren",
+        "Geplante Überprüfung Q1 2023 mehrfach verschoben",
+        "Aktuelle Risikofaktoren (DORA, neue Kundengruppen) nicht berücksichtigt"
+      ],
+      "rechtsgrundlagen": [
+        "§ 5 Abs. 2 GwG",
+        "§ 5 Abs. 1 GwG"
+      ],
+      "relevante_dokumente": [
+        "02_risikoanalyse_2022.pdf",
+        "interview_gwb_dr_mueller.json",
+        "gwb_jahresbericht_2024.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "S02-01",
+      "titel": "Kundensorgfaltspflichten – Identifizierung und Verifikation",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "18% der Firmenkunden ohne aktuelle wirtschaftlich Berechtigte-Abfrage",
+        "Transparenzregister-Abgleich nicht lückenlos dokumentiert"
+      ],
+      "rechtsgrundlagen": [
+        "§ 10 GwG",
+        "§ 11 GwG",
+        "§ 12 GwG"
+      ],
+      "relevante_dokumente": [
+        "03_kyc_handbuch.pdf"
+      ],
+      "erwartete_confidence_min": 0.5
+    },
+    {
+      "id": "S03-01",
+      "titel": "Transaction Monitoring – System und Kalibrierung",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "Schwellenwert 9.000 EUR ohne dokumentierte Begründung (FATF-Standard 10.000 EUR)",
+        "Kein dokumentierter Kalibrierungsprozess für Schwellenwerte",
+        "False-Positive-Rate nicht regelmäßig evaluiert"
+      ],
+      "rechtsgrundlagen": [
+        "§ 25h KWG",
+        "§ 6 GwG"
+      ],
+      "relevante_dokumente": [
+        "04_tm_konzept.pdf",
+        "tm_alerts_2024.xlsx"
+      ],
+      "erwartete_confidence_min": 0.5
+    },
+    {
+      "id": "S03-03",
+      "titel": "Alert-Bearbeitungsrückstau und SLA-Einhaltung",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "847 Alerts überfällig (>7 Tage), davon 312 älter als 21 Werktage",
+        "Durchschnittliche Bearbeitungszeit Q4/2024: 19 Tage (SLA: 5 Werktage)",
+        "Rückstau besteht seit August 2024 - keine Abhilfemaßnahmen dokumentiert"
+      ],
+      "rechtsgrundlagen": [
+        "§ 43 GwG",
+        "§ 25h KWG"
+      ],
+      "relevante_dokumente": [
+        "tm_alerts_2024.xlsx",
+        "04_tm_konzept.pdf",
+        "interview_gwb_dr_mueller.json"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "S04-01",
+      "titel": "SAR/STR – Verdachtsmeldungsverfahren",
+      "ergebnis": "teilkonform",
+      "schweregrad": "gering",
+      "maengel": [
+        "Interne Eskalationswege nicht vollständig dokumentiert"
+      ],
+      "rechtsgrundlagen": [
+        "§ 43 GwG",
+        "§ 44 GwG"
+      ],
+      "relevante_dokumente": [
+        "05_sar_verfahren.pdf",
+        "sar_statistik_2024.csv"
+      ],
+      "erwartete_confidence_min": 0.45
+    },
+    {
+      "id": "S05-01",
+      "titel": "Schulungsprogramm und Nachweisdokumentation",
+      "ergebnis": "teilkonform",
+      "schweregrad": "gering",
+      "maengel": [
+        "374 von 520 Mitarbeitern abgeschlossen (72%, Ziel: 95%)",
+        "67 Mitarbeiter ohne Begründung für Nicht-Teilnahme"
+      ],
+      "rechtsgrundlagen": [
+        "§ 6 Abs. 2 GwG"
+      ],
+      "relevante_dokumente": [
+        "06_schulungskonzept.pdf",
+        "schulungsmatrix_2024.xlsx"
+      ],
+      "erwartete_confidence_min": 0.5
+    },
+    {
+      "id": "S06-01",
+      "titel": "Aufbewahrung und Dokumentation",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 8 GwG"
+      ],
+      "relevante_dokumente": [
+        "07_aufbewahrung_iks.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "S07-01",
+      "titel": "Jahresbericht des Geldwäschebeauftragten",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 7 GwG"
+      ],
+      "relevante_dokumente": [
+        "gwb_jahresbericht_2024.pdf"
+      ],
+      "erwartete_confidence_min": 0.6
+    },
+    {
+      "id": "S08-01",
+      "titel": "Interne Revision – Prüfungsintervall AML-Framework",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "Letzte IR-Prüfung AML-Framework: Oktober 2022 (>2 Jahre)",
+        "Maßnahmentracking nur über Excel, seit März 2023 nicht aktualisiert",
+        "Kein formaler Closure-Nachweis für Vorjahres-Findings"
+      ],
+      "rechtsgrundlagen": [
+        "§ 25c KWG",
+        "MaRisk BTO 2.2"
+      ],
+      "relevante_dokumente": [
+        "07_aufbewahrung_iks.pdf",
+        "interview_gwb_dr_mueller.json"
+      ],
+      "erwartete_confidence_min": 0.4
+    }
+  ]
+}
