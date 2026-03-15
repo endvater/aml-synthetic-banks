@@ -1,0 +1,89 @@
+{
+  "bank_id": "08_krypto_zahlungsbank",
+  "bank_name": "Krypto-Zahlungsbank AG",
+  "bank_type": "Krypto-Zahlungsdienstleister / VASP",
+  "regulatory_scope": [
+    "GwG",
+    "KWG",
+    "MiCA",
+    "FATF-VASP",
+    "EU 2023/1113"
+  ],
+  "compliance_maturity": "niedrig",
+  "description": "Krypto-nativer Zahlungsdienstleister mit VASP-Kundschaft, hoher SAR-Quote und DeFi-Exposure. Travel Rule nur partiell implementiert. Hochrisiko-Testfall.",
+  "gesamturteil": "erhebliche_maengel",
+  "prueffelder": [
+    {
+      "id": "S10-01",
+      "titel": "Travel Rule Krypto (EU 2023/1113)",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "Travel Rule nur für Transfers >1.000 EUR implementiert (Pflicht: alle Beträge ab 0 EUR)",
+        "Originator-Daten bei 34% der ausgehenden Transfers unvollständig"
+      ],
+      "rechtsgrundlagen": [
+        "EU 2023/1113",
+        "§ 25i KWG"
+      ],
+      "relevante_dokumente": [
+        "travel_rule_konzept.pdf",
+        "transfer_log_2024.csv"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "S02-06",
+      "titel": "VASP-Kunden Sorgfaltspflichten",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "12 VASP-Kunden ohne FATF-VASP-Compliance-Nachweis",
+        "DeFi-Protocol-Interaktionen ohne Risikobewertung"
+      ],
+      "rechtsgrundlagen": [
+        "§ 10 GwG",
+        "§ 15 GwG"
+      ],
+      "relevante_dokumente": [
+        "vasp_kyc_register.xlsx"
+      ],
+      "erwartete_confidence_min": 0.5
+    },
+    {
+      "id": "S04-02",
+      "titel": "SAR-Quote und Meldequalität",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "SAR-Quote 8,3% (Industrie-Benchmark: 1-3%) - Hinweis auf Über-Meldung oder systemische Probleme",
+        "Meldungen ohne ausreichende Narrativ-Qualität"
+      ],
+      "rechtsgrundlagen": [
+        "§ 43 GwG"
+      ],
+      "relevante_dokumente": [
+        "sar_statistik_2024.csv"
+      ],
+      "erwartete_confidence_min": 0.45
+    },
+    {
+      "id": "S01-02",
+      "titel": "Risikoanalyse MiCA/VASP",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "MiCA-Risikofaktoren nicht in Risikoanalyse integriert",
+        "Stablecoin-spezifische Risiken nicht bewertet"
+      ],
+      "rechtsgrundlagen": [
+        "§ 5 GwG",
+        "MiCA Art. 83"
+      ],
+      "relevante_dokumente": [
+        "02_risikoanalyse_2024.pdf"
+      ],
+      "erwartete_confidence_min": 0.45
+    }
+  ]
+}
