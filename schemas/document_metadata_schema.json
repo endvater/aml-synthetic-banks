@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DocumentMetadata",
+  "type": "object",
+  "required": [
+    "filename",
+    "type",
+    "description",
+    "prueffelder"
+  ],
+  "properties": {
+    "filename": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "pdf",
+        "xlsx",
+        "csv",
+        "json",
+        "log",
+        "txt"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "prueffelder": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "eingebaute_maengel": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "erwartetes_ergebnis": {
+      "type": "string",
+      "enum": [
+        "konform",
+        "teilkonform",
+        "nicht_konform",
+        "nicht_prüfbar",
+        "evidenz"
+      ]
+    }
+  }
+}
