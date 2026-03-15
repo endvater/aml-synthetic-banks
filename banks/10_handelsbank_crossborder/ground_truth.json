@@ -1,0 +1,90 @@
+{
+  "bank_id": "10_handelsbank_crossborder",
+  "bank_name": "Handelsbank CrossBorder GmbH",
+  "bank_type": "Handelsfinanzierungsbank / Trade Finance",
+  "regulatory_scope": [
+    "GwG",
+    "KWG",
+    "AWG",
+    "AWV",
+    "EU-Sanktionsrecht"
+  ],
+  "compliance_maturity": "mittel",
+  "description": "Spezialisierte Handelsfinanzierungsbank mit Dokumentenakkreditiven, Garantien und Trade Finance für MENA- und APAC-Märkte. TBML-Risiken, Sanktions-Screening-Lücken, Hochrisikoländer.",
+  "gesamturteil": "erhebliche_maengel",
+  "prueffelder": [
+    {
+      "id": "S11-01",
+      "titel": "Sanctions Screening Trade Finance",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "Güter-Screening für Dual-Use-Waren nur manuell für Akkreditive >500.000 EUR",
+        "Sanctions-Screening-Tool nicht mit EU-Konsolidierter-Liste aktualisiert (Stand: 2024-08-12)"
+      ],
+      "rechtsgrundlagen": [
+        "AWG § 17",
+        "EU 833/2014",
+        "§ 6 GwG"
+      ],
+      "relevante_dokumente": [
+        "sanctions_screening_konzept.pdf",
+        "akkreditiv_register_2024.xlsx"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "S03-05",
+      "titel": "TBML Transaction Monitoring",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "Keine Waren-Preis-Plausibilisierung im TM (TBML-Kerntypologie)",
+        "Keine geografische Risiko-Eskalation für Iran, Nordkorea, Russland"
+      ],
+      "rechtsgrundlagen": [
+        "§ 25h KWG",
+        "§ 6 GwG"
+      ],
+      "relevante_dokumente": [
+        "04_tm_konzept.pdf"
+      ],
+      "erwartete_confidence_min": 0.5
+    },
+    {
+      "id": "S02-08",
+      "titel": "KYC Hochrisiko-Korrespondenzbanken",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "3 Korrespondenzbanken in Hochrisikoländern ohne enhanced due diligence",
+        "Jährliches Review 2 Korrespondenzbanken überfällig"
+      ],
+      "rechtsgrundlagen": [
+        "§ 15 GwG",
+        "§ 25b KWG"
+      ],
+      "relevante_dokumente": [
+        "korrespondenzbank_due_diligence.pdf"
+      ],
+      "erwartete_confidence_min": 0.5
+    },
+    {
+      "id": "S01-02",
+      "titel": "Risikoanalyse Trade Finance / TBML",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "TBML-Risikotypologien in Risikoanalyse nur oberflächlich behandelt",
+        "Länderrisiko-Matrix für MENA veraltet (Stand 2023)"
+      ],
+      "rechtsgrundlagen": [
+        "§ 5 GwG"
+      ],
+      "relevante_dokumente": [
+        "02_risikoanalyse_2023.pdf"
+      ],
+      "erwartete_confidence_min": 0.45
+    }
+  ]
+}
