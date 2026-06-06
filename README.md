@@ -144,6 +144,29 @@ Vollständiges Schema: [schemas/ground_truth_schema.json](schemas/ground_truth_s
 | TBML Trade Finance | 06, 10 | S03, S11 |
 | GwG-Ausnahmen §3 Abs. 2 | 09 | S02 |
 
+### EU-Verordnungen (2024/2025)
+
+Zusätzlich zur GwG-Basis sind die neuen EU-Regulatoriken abgedeckt. Diese Prüffelder
+sind per `regulatorik`-Feld und ID-Namespace (`amlr:S…`, `micar:S…`, …) eindeutig.
+
+| Verordnung | Banken | Prüffeld-Namespace |
+|---|---|---|
+| AMLR (EU 2024/1624) + AMLD6 | **alle** | `amlr:S01–S08` |
+| MiCAR (EU 2023/1114) | 08 | `micar:S01–S07` |
+| MaComp (WpHG/MiFID II) | 04 | `macomp:S01–S06` |
+| CRR III (EU 2024/1623) / KWG | 01, 07, 09 | `kwg_crr:S01–S06` |
+
+Die erwarteten Ergebnisse sind am jeweiligen `compliance_maturity` der Bank kalibriert
+(Bank 07 = Positiv-Benchmark → überwiegend `konform`; Banken 02/04/08 = niedrige Reife →
+mehrere `nicht_konform`).
+
+### Eval-Sets: Security / Chaos / Drift
+
+Über das Golden Set hinaus liegen unter [`eval_sets/`](eval_sets/) **Verhaltens-Sets**:
+Prompt-Injection/RAG-Poisoning (Security), beschädigte/fehlende Eingaben (Chaos) und ein
+Drift-Wächter. Sie prüfen, ob ein System unter Angriff/Störung **markiert/eskaliert bzw.
+kontrolliert degradiert** statt zu halluzinieren. Details: [`eval_sets/README.md`](eval_sets/README.md).
+
 ---
 
 ## Für wen ist dieses Repo?
