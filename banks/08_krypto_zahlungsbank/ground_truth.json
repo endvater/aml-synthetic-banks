@@ -7,7 +7,9 @@
     "KWG",
     "MiCA",
     "FATF-VASP",
-    "EU 2023/1113"
+    "EU 2023/1113",
+    "AMLR (EU 2024/1624)",
+    "MiCAR (EU 2023/1114)"
   ],
   "compliance_maturity": "niedrig",
   "description": "Krypto-nativer Zahlungsdienstleister mit VASP-Kundschaft, hoher SAR-Quote und DeFi-Exposure. Travel Rule nur partiell implementiert. Hochrisiko-Testfall.",
@@ -84,6 +86,160 @@
         "02_risikoanalyse_2024.pdf"
       ],
       "erwartete_confidence_min": 0.45
+    },
+    {
+      "id": "amlr:S01-01",
+      "regulatorik": "amlr",
+      "titel": "Unternehmensweite Risikobewertung (Art. 10 AMLR)",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "Keine unternehmensweite Risikobewertung gemäß Art. 10 AMLR dokumentiert"
+      ],
+      "rechtsgrundlagen": [
+        "Art. 10 AMLR"
+      ],
+      "relevante_dokumente": [
+        "risikoanalyse.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "amlr:S04-03",
+      "regulatorik": "amlr",
+      "titel": "Laufende Überwachung & Transaktionsmonitoring (Art. 26 AMLR)",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "Kontinuierliche Überwachung der Geschäftsbeziehung gemäß Art. 26 AMLR unzureichend"
+      ],
+      "rechtsgrundlagen": [
+        "Art. 26 AMLR"
+      ],
+      "relevante_dokumente": [
+        "monitoring_konzept.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "amlr:S05-02",
+      "regulatorik": "amlr",
+      "titel": "PEP-Identifizierung & -Behandlung (Art. 33 AMLR)",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "PEP ohne Mittelherkunftsprüfung und ohne Senior-Management-Freigabe (Art. 33 AMLR)"
+      ],
+      "rechtsgrundlagen": [
+        "Art. 33 AMLR"
+      ],
+      "relevante_dokumente": [
+        "pep_screening.xlsx"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "amlr:S06-01",
+      "regulatorik": "amlr",
+      "titel": "Wirtschaftlich Berechtigte (Art. 51–52 AMLR)",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "UBO bei verschachtelten Strukturen nur bis Ebene 2 ermittelt"
+      ],
+      "rechtsgrundlagen": [
+        "Art. 51 AMLR",
+        "Art. 52 AMLR"
+      ],
+      "relevante_dokumente": [
+        "ubo_register.xlsx"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "amlr:S07-01",
+      "regulatorik": "amlr",
+      "titel": "Verdachtsmeldungen an die FIU (Art. 69 AMLR)",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "Kein wirksames Verfahren zur Verdachtsmeldung gemäß Art. 69 AMLR"
+      ],
+      "rechtsgrundlagen": [
+        "Art. 69 AMLR"
+      ],
+      "relevante_dokumente": [
+        "sar_prozess.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "micar:S01-01",
+      "regulatorik": "micar",
+      "titel": "CASP-Zulassung (Art. 59 MiCAR)",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "Keine wirksame CASP-Zulassung für alle erbrachten Dienstleistungen (Art. 59 MiCAR)"
+      ],
+      "rechtsgrundlagen": [
+        "Art. 59 MiCAR"
+      ],
+      "relevante_dokumente": [
+        "casp_zulassung.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "micar:S03-01",
+      "regulatorik": "micar",
+      "titel": "Trennung & Schutz von Kundenwerten (Art. 70 MiCAR)",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "Kundengelder/Kryptowerte nicht vom Eigenvermögen getrennt (Art. 70 MiCAR)"
+      ],
+      "rechtsgrundlagen": [
+        "Art. 70 MiCAR"
+      ],
+      "relevante_dokumente": [
+        "verwahrkonzept.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "micar:S03-02",
+      "regulatorik": "micar",
+      "titel": "Verwahrkonzept & Positionsregister (Art. 75 MiCAR)",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "wesentlich",
+      "maengel": [
+        "Verwahrkonzept ohne vollständiges Positionsregister und Haftungsregelung (Art. 75 MiCAR)"
+      ],
+      "rechtsgrundlagen": [
+        "Art. 75 MiCAR"
+      ],
+      "relevante_dokumente": [
+        "positionsregister.xlsx"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "micar:S07-01",
+      "regulatorik": "micar",
+      "titel": "Travel Rule Kryptowerte (VO 2023/1113)",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "Begleitdaten bei Self-hosted-Wallets unvollständig"
+      ],
+      "rechtsgrundlagen": [
+        "VO (EU) 2023/1113"
+      ],
+      "relevante_dokumente": [
+        "travel_rule_konzept.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
     }
   ]
 }
