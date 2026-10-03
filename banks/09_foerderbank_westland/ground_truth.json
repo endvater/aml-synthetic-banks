@@ -4,7 +4,9 @@
   "bank_type": "Öffentlich-rechtliche Förderbank",
   "regulatory_scope": [
     "GwG",
-    "KWG"
+    "KWG",
+    "AMLR (EU 2024/1624)",
+    "CRR III (EU 2024/1623)"
   ],
   "compliance_maturity": "hoch",
   "description": "Öffentlich-rechtliche Förderbank mit klarer Governance-Struktur und beschränktem Kundenkreis. Überwiegend konform mit einigen Besonderheiten bei GwG-Ausnahmen für staatliche Auftraggeber.",
@@ -83,6 +85,133 @@
       ],
       "relevante_dokumente": [],
       "erwartete_confidence_min": 0.3
+    },
+    {
+      "id": "amlr:S01-01",
+      "regulatorik": "amlr",
+      "titel": "Unternehmensweite Risikobewertung (Art. 10 AMLR)",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "Art. 10 AMLR"
+      ],
+      "relevante_dokumente": [
+        "risikoanalyse.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "amlr:S04-03",
+      "regulatorik": "amlr",
+      "titel": "Laufende Überwachung & Transaktionsmonitoring (Art. 26 AMLR)",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "Art. 26 AMLR"
+      ],
+      "relevante_dokumente": [
+        "monitoring_konzept.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "amlr:S05-02",
+      "regulatorik": "amlr",
+      "titel": "PEP-Identifizierung & -Behandlung (Art. 33 AMLR)",
+      "ergebnis": "teilkonform",
+      "schweregrad": "gering",
+      "maengel": [
+        "PEP-Screening vorhanden, Genehmigungspflicht teils nicht dokumentiert"
+      ],
+      "rechtsgrundlagen": [
+        "Art. 33 AMLR"
+      ],
+      "relevante_dokumente": [
+        "pep_screening.xlsx"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "amlr:S06-01",
+      "regulatorik": "amlr",
+      "titel": "Wirtschaftlich Berechtigte (Art. 51–52 AMLR)",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "Art. 51 AMLR",
+        "Art. 52 AMLR"
+      ],
+      "relevante_dokumente": [
+        "ubo_register.xlsx"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "amlr:S07-01",
+      "regulatorik": "amlr",
+      "titel": "Verdachtsmeldungen an die FIU (Art. 69 AMLR)",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "Art. 69 AMLR"
+      ],
+      "relevante_dokumente": [
+        "sar_prozess.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "kwg_crr:S01-01",
+      "regulatorik": "kwg_crr",
+      "titel": "Eigenmittelanforderungen (Art. 92 CRR)",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 10 KWG",
+        "Art. 92 CRR"
+      ],
+      "relevante_dokumente": [
+        "eigenmittel_corep.xlsx"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "kwg_crr:S02-01",
+      "regulatorik": "kwg_crr",
+      "titel": "Großkreditobergrenze (Art. 395 CRR)",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "§ 13 KWG",
+        "Art. 395 CRR"
+      ],
+      "relevante_dokumente": [
+        "grosskredit_meldung.xlsx"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "kwg_crr:S06-01",
+      "regulatorik": "kwg_crr",
+      "titel": "Aufsichtliches Meldewesen (§ 24 KWG, COREP/FINREP)",
+      "ergebnis": "teilkonform",
+      "schweregrad": "gering",
+      "maengel": [
+        "Meldungen vollständig, vereinzelt Plausibilitätsfehler"
+      ],
+      "rechtsgrundlagen": [
+        "§ 24 KWG"
+      ],
+      "relevante_dokumente": [
+        "meldekalender.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
     }
   ]
 }

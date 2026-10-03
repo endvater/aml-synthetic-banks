@@ -90,6 +90,10 @@
             "type": "number",
             "minimum": 0,
             "maximum": 1
+          },
+          "regulatorik": {
+            "type": "string",
+            "description": "Verordnungs-Namespace des Prüffelds, z. B. amlr, micar, macomp, kwg_crr, gwg"
           }
         }
       }

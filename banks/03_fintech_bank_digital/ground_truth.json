@@ -6,7 +6,8 @@
     "GwG",
     "KWG",
     "ZAG",
-    "PSD2"
+    "PSD2",
+    "AMLR (EU 2024/1624)"
   ],
   "compliance_maturity": "mittel",
   "description": "Neobank mit API-only-Ansatz und KI-basiertem Transaction Monitoring. Technisch fortgeschritten, aber lückenhafte Compliance-Dokumentation und ungeklärte Verantwortlichkeiten im Outsourcing.",
@@ -108,6 +109,88 @@
         "sar_log_2024.json"
       ],
       "erwartete_confidence_min": 0.45
+    },
+    {
+      "id": "amlr:S01-01",
+      "regulatorik": "amlr",
+      "titel": "Unternehmensweite Risikobewertung (Art. 10 AMLR)",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "Art. 10 AMLR"
+      ],
+      "relevante_dokumente": [
+        "risikoanalyse.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "amlr:S04-03",
+      "regulatorik": "amlr",
+      "titel": "Laufende Überwachung & Transaktionsmonitoring (Art. 26 AMLR)",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "Monitoring deckt nur Schwellenwerte, keine Verhaltensmuster"
+      ],
+      "rechtsgrundlagen": [
+        "Art. 26 AMLR"
+      ],
+      "relevante_dokumente": [
+        "monitoring_konzept.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "amlr:S05-02",
+      "regulatorik": "amlr",
+      "titel": "PEP-Identifizierung & -Behandlung (Art. 33 AMLR)",
+      "ergebnis": "nicht_konform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "PEP ohne Mittelherkunftsprüfung und ohne Senior-Management-Freigabe (Art. 33 AMLR)"
+      ],
+      "rechtsgrundlagen": [
+        "Art. 33 AMLR"
+      ],
+      "relevante_dokumente": [
+        "pep_screening.xlsx"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "amlr:S06-01",
+      "regulatorik": "amlr",
+      "titel": "Wirtschaftlich Berechtigte (Art. 51–52 AMLR)",
+      "ergebnis": "teilkonform",
+      "schweregrad": "bedeutsam",
+      "maengel": [
+        "UBO bei verschachtelten Strukturen nur bis Ebene 2 ermittelt"
+      ],
+      "rechtsgrundlagen": [
+        "Art. 51 AMLR",
+        "Art. 52 AMLR"
+      ],
+      "relevante_dokumente": [
+        "ubo_register.xlsx"
+      ],
+      "erwartete_confidence_min": 0.55
+    },
+    {
+      "id": "amlr:S07-01",
+      "regulatorik": "amlr",
+      "titel": "Verdachtsmeldungen an die FIU (Art. 69 AMLR)",
+      "ergebnis": "konform",
+      "schweregrad": "n/a",
+      "maengel": [],
+      "rechtsgrundlagen": [
+        "Art. 69 AMLR"
+      ],
+      "relevante_dokumente": [
+        "sar_prozess.pdf"
+      ],
+      "erwartete_confidence_min": 0.55
     }
   ]
 }
