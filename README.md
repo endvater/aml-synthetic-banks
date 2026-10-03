@@ -176,3 +176,10 @@ MIT License – frei nutzbar, modifizierbar und redistribuierbar.
 ---
 
 *Entstanden aus dem [FinRegAgents v2 Härtetest-Artikel](https://watchdog.endvater.de/2026/03/08/finregagents-v2-wie-ein-ki-agent-heute-eine-gwg-sonderpruefung-der-musterbank-ag-durchgefuehrt-hat-und-was-dabei-alles-schiefgelaufen-ist/) vom 08. März 2026.*
+
+## Automatische Qualitätsprüfung
+
+Die CI validiert die Ground Truth aller zehn Banken gegen das JSON-Schema und
+prüft den Evaluator mit korrekten Labels sowie absichtlich falschen Vorhersagen.
+Lokal: `pip install 'jsonschema>=4,<5' && python tools/check_benchmark.py`.
+Die [MIT-Lizenz](LICENSE) gilt für den Code und die synthetischen Repo-Inhalte.
